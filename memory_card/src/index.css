@@ -11,15 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.card{
-  text-align: center;
-  display: inline-block;
-padding: 20px;
-  background-color: greenyellow;
+
+/* Card.css */
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: calc(25% - 16px); /* Adjust width to fit 4 cards in a row */
   box-sizing: border-box;
+  display: inline-block; /* Ensure the cards appear inline */
   color: blue;
-  border-radius: 20px;
+  background-color: greenyellow;
+  text-align: center
+  
+;
 }
+
+header{
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card  img{
   border: 1px solid black;
   border-radius: 10px;
@@ -27,4 +43,7 @@ padding: 20px;
   padding: 30px;
   height: 100px;
   width: 100px;
+}
+.card:hover {
+  box-shadow: 0 0 20px #00f, 0 0 40px #00f, 0 0 60px #00f; /* Glowing effect */
 }

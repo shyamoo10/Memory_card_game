@@ -40,7 +40,17 @@ function App() {
 
   return (
     <div className="App">
-      {/* Added a null check for dataArray before mapping */}
+      <header>
+        <div className='leftsection'>
+       <h1>Pokemon Memory Game</h1>
+       <p>Get points by clicking on an image but don't click on any more than once!</p>
+
+       </div>
+       <div  className='rightsection'>
+        <p>Score:</p>
+       <p>Best Score:</p>
+       </div>
+      </header>
       {dataArray && dataArray.map((data) => (
         <Card data={data} />
       ))}
